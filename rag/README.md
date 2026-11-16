@@ -16,6 +16,7 @@ python3 -m venv .venv                     # uma vez só
 .venv/bin/python buscar.py "Estou desempregada e tenho três filhos, tenho direito a algum auxílio?"
 .venv/bin/python buscar.py --trechos "..."  # mostra os trechos crus recuperados, com score (demo técnica)
 .venv/bin/python avaliar.py               # métricas de recuperação
+.venv/bin/uvicorn api:app --port 8000     # API HTTP usada pelo Frontend (precisa do Ollama com bge-m3)
 ```
 
 Na primeira execução, o Chroma baixa o modelo de embeddings (~80 MB). Depois disso, tudo roda
