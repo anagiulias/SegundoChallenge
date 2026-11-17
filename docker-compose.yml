@@ -30,7 +30,7 @@ services:
     restart: "no"
 
   backend:
-    build: ./rag
+    build: ./Dados-RAG/RAG
     environment:
       OLLAMA_URL: http://ollama:11434
       CORS_ORIGINS: http://localhost:3000
